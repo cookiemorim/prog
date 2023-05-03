@@ -7,20 +7,25 @@ Write your code in this editor and press "Run" button to execute it.
 }
 
 
-program ClassificarNadador;
+program Cat_Nadador;
 var
-idade: integer;
+v_idade: integer;
+v_categoria: string [15];
 begin
-write('Digite a idade do nadador: ');
-readln(idade);
-if (idade >= 5) and (idade <= 7) then
-writeln('Infantil A')
-else if (idade >= 8) and (idade <= 10) then
-writeln('Infantil B')
-else if (idade >= 11) and (idade <= 13) then
-writeln('Juvenil A')
-else if (idade >= 14) and (idade <= 17) then
-writeln('Juvenil B')
-else
-writeln('Sênior');
+   writeln('Digite a idade do nadador');
+   readln(v_idade);
+   if (v_idade >= 5) and (v_idade <= 7) then
+       v_categoria:= 'Infantil A'
+   else 
+      if (v_idade >= 8) and (v_idade <= 10) then
+          v_categoria:= 'Infantil B'
+      else 
+         if (v_idade >= 11) and (v_idade <= 13) then
+             v_categoria:= 'Juvenil A'
+         else 
+            if (v_idade >= 14) and (v_idade <= 17) then
+                v_categoria:= 'Juvenil B'
+            else
+               v_categoria:= 'Sênior';
+    writeln('a categoria do nadador é:', v_categoria);
 end.
