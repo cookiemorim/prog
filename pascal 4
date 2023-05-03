@@ -7,16 +7,15 @@ Write your code in this editor and press "Run" button to execute it.
 }
 
 
-program ConcatenarNomeSobrenome;
-
+program Nome_Sobrenome;
 var
-nome, sobrenome, nomeCompleto: string;
+   nome, sobrenome, nomeCompleto: string;
 
 begin
-write('Digite seu nome: ');
-readln(nome);
-write('Digite seu sobrenome: ');
-readln(sobrenome);
+   write('Digite seu nome: ');
+   readln(nome);
+   write('Digite seu sobrenome: ');
+   readln(sobrenome);
 
 nomeCompleto := nome + ' ' + sobrenome;
 
