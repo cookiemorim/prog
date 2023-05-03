@@ -9,9 +9,9 @@ Write your code in this editor and press "Run" button to execute it.
 
 program Calcular_Media;
 var
-nota1, nota2, media: real;
-aulas_Ministradas, aulas_Assistidas: integer;
-frequencia: real;
+   nota1, nota2, media: real;
+   aulas_Ministradas, aulas_Assistidas: integer;
+   frequencia: real;
 begin
    write('Digite a primeira nota: ');
    readln(nota1);
