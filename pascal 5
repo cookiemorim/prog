@@ -1,0 +1,22 @@
+{
+
+                            Online Pascal Compiler.
+                Code, Compile, Run and Debug Pascal program online.
+Write your code in this editor and press "Run" button to execute it.
+
+}
+
+
+program N_Inteiros;
+var
+   numero_1, numero_2, resultado: integer;
+begin
+   write('Digite o primeiro número inteiro: ');
+   readln(numero_1);
+   write('Digite o segundo número inteiro: ');
+   readln(numero_2);
+
+   resultado:= numero_1 + numero_2;
+
+   writeln('O resultado da soma é:', resultado);
+end.
