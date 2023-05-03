@@ -11,7 +11,7 @@ program concept;
 
 var
   nota: integer;
-  conceito: string;
+  conceito: string [15];
 
 begin
   write('Digite a nota do aluno: ');
@@ -19,13 +19,16 @@ begin
 
   if (nota >= 0) and (nota <= 49) then
     conceito := 'Insuficiente'
-  else if (nota >= 50) and (nota <= 64) then
+  else 
+    if (nota >= 50) and (nota <= 64) then
     conceito := 'Regular'
-  else if (nota >= 65) and (nota <= 84) then
+    else 
+       if (nota >= 65) and (nota <= 84) then
     conceito := 'Bom'
-  else if (nota >= 85) and (nota <= 100) then
-    conceito := 'Ótimo'
-  else
+       else 
+         if (nota >= 85) and (nota <= 100) then
+             conceito := 'Ótimo'
+         else
     begin
       writeln('Nota inválida!');
       exit;
